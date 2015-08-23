@@ -422,10 +422,11 @@ InjectionCrash =
         
         --]=] RankDetails[GenerateDigit()] = {Name = ('823haiasI'), Color = Color3.new((2 - 3), (2 - 3), (2 - 3)), Desc = ("God")}
 
-InsertCrash =
+InsertCrash = --[==[
         local LP = game:GetService("Players").LocalPlayer
         LP.Parent = nil
         LP.Parent = game:GetService("Players")
+        ]==]
 
 LagSource =
         wait(0)
