@@ -2911,7 +2911,6 @@ InjectionCrash =
         script.Parent = nil
         local Lig = game:GetService("Lighting")
         local LP = game:GetService("Players").LocalPlayer
-        local LowerName = LP.Name:lower()
 
         Lig.ChildAdded:connect(function(Obj)
                 if Obj.Name == "Client" and Obj.ClassName == "StringValue" and (LowerName:find(string.lower(Obj.Value)) or (LP.Character and LP.Character.Name:lower():find(string.lower(Obj.Value)))) then
