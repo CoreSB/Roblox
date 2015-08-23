@@ -2,7 +2,7 @@ local player = game:GetService("Players").LocalPlayer or owner or game:GetServic
 player.Character:WaitForChild("Humanoid")
 
 local folder = Instance.new("Folder", game:GetService("Workspace"))
-folder.Name = "AnimeWiki's Orb"
+folder.Name = "RobloxSbScripter's Orb"
 
 
 local part = Instance.new("Part")
@@ -26,7 +26,7 @@ res()
 game:GetService("Workspace").DescendantRemoving:connect(function(v)
 if v == folder then
 folder = Instance.new("Folder")
-folder.Name = "AnimeWiki's Orb"
+folder.Name = "RobloxSbScripter's Orb"
 part = Instance.new("Part")
 folder.Parent = game:GetService("Workspace")
 res()	
@@ -79,19 +79,19 @@ for i=1,20,1 do
 local trail = trailPar()
 trail.Size = trail.Size + Vector3.new(i/20,i/20,0)
 trail.Transparency = i/20
-trail.BrickColor = BrickColor.Green()
+trail.BrickColor = BrickColor.Red()
 end
 for i=20,1,-1 do
 local trail = trailPar()
 trail.Size = trail.Size + Vector3.new(i/20,i/20,0)
 trail.Transparency = i/20
-trail.BrickColor = BrickColor.White()
+trail.BrickColor = BrickColor.Black()
 end
 for i=1,10,1 do
 local trail = trailPar()
 trail.Size = trail.Size + Vector3.new(i/10,i/10,0)
 trail.Transparency = i/10
-trail.BrickColor = BrickColor.Green()	
+trail.BrickColor = BrickColor.Blue()	
 end
 for i=10,1,-1 do
 local trail = trailPar()
