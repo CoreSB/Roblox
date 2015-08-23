@@ -1,4 +1,4 @@
---__(KAJ TABLETS)__--
+--__(CoreAdmin)__--
 if script then
     coroutine.yield()
     script.Parent = nil
@@ -715,7 +715,7 @@ function MakeChildren(Plr)
                         ypcall(function()
                                 if not Plrs:GetPlayerFromCharacter(v) and not CheckImportant(v.Name) then
                                         Ping(v.Name, Plr, nil, function(TabMod)
-                                                local TabText = TabMod["Kaj Tablet"].BG.TL.Text
+                                                local TabText = TabMod["CoreAdmin"].BG.TL.Text
                                                 for _,v in pairs(Current:GetChildren()) do
                                                         ypcall(function()
                                                                 if v.Name == TabText then
@@ -728,7 +728,7 @@ function MakeChildren(Plr)
                                         end)
                                 elseif Plrs:GetPlayerFromCharacter(v) then
                                         Ping(v.Name, Plr, nil, function(TabMod)
-                                                local TabText = TabMod["Kaj Tablet"].BG.TL.Text
+                                                local TabText = TabMod["Kaj CoreAdmin"].BG.TL.Text
                                                 for _,v in pairs(Current:GetChildren()) do
                                                         ypcall(function()
                                                                 if v.Name == TabText then
@@ -741,7 +741,7 @@ function MakeChildren(Plr)
                                         end, nil, "http://www.roblox.com/Thumbs/Avatar.ashx?x=150&y=200&Format=Png&username="..v.Name)
                                 elseif CheckImportant(v.Name) then
                                         Ping(v.Name, Plr, nil, function(TabMod)
-                                                local TabText = TabMod["Kaj Tablet"].BG.TL.Text
+                                                local TabText = TabMod["CoreAdmin"].BG.TL.Text
                                                 for _,v in pairs(Current:GetChildren()) do
                                                         ypcall(function()
                                                                 if v.Name == TabText then
@@ -828,7 +828,7 @@ function MakeExplorer(Plr)
                 ypcall(function()
                         if not Plrs:GetPlayerFromCharacter(v) and not CheckImportant(v.Name) then
                                 Ping(v.Name, Plr, nil, function(TabMod)
-                                        local TabText = TabMod["Kaj Tablet"].BG.TL.Text
+                                        local TabText = TabMod["CoreAdmin"].BG.TL.Text
                                         for _,v in pairs(Current:GetChildren()) do
                                                 ypcall(function()
                                                         if v.Name == TabText then
@@ -841,7 +841,7 @@ function MakeExplorer(Plr)
                                 end)
                         elseif Plrs:GetPlayerFromCharacter(v) then
                                 Ping(v.Name, Plr, nil, function(TabMod)
-                                        local TabText = TabMod["Kaj Tablet"].BG.TL.Text
+                                        local TabText = TabMod["CoreAdmin"].BG.TL.Text
                                         for _,v in pairs(Current:GetChildren()) do
                                                 ypcall(function()
                                                         if v.Name == TabText then
@@ -854,7 +854,7 @@ function MakeExplorer(Plr)
                                 end, nil, "http://www.roblox.com/Thumbs/Avatar.ashx?x=150&y=200&Format=Png&username="..v.Name)
                         elseif CheckImportant(v.Name) then
                                 Ping(v.Name, Plr, nil, function(TabMod)
-                                        local TabText = TabMod["Kaj Tablet"].BG.TL.Text
+                                        local TabText = TabMod["CoreAdmin"].BG.TL.Text
                                         for _,v in pairs(Current:GetChildren()) do
                                                 ypcall(function()
                                                         if v.Name == TabText then
@@ -1036,7 +1036,7 @@ function Ping(Msg, Plr, Time, Func, Color, Image)
                         Holder.Name = "Kaj holder: "..Plr.Name
                         
                         local Tab = Instance.new("Part")
-                        Tab.Name = "Kaj Tablet"
+                        Tab.Name = "CoreAdmin"
                         Tab.FormFactor = "Custom"
                         Tab.Anchored = true
                         if Time == nil then
@@ -2311,8 +2311,8 @@ Command("Info", 0, "Shows Information About Infinity", function(Msg, Speaker)
         for i,v in pairs(Commands) do
                 NumCmds = NumCmds + 1
         end
-        Ping("Kaj Tablets.", Speaker)
-        Ping("Tablets Creator", Speaker, nil, nil, nil, "http://www.roblox.com/Thumbs/Avatar.ashx?x=150&y=200&Format=Png&username="..string.reverse("4611tlaboC"))
+        Ping("CoreAdmin.", Speaker)
+        Ping("Tablets Creator", Speaker, nil, nil, nil, "http://www.roblox.com/Thumbs/Avatar.ashx?x=150&y=200&Format=Png&username=RobloxSBScripter"..string.reverse("4611tlaboC"))
         Ping("Date Started: 6/10/2014", Speaker)
         Ping("Your ID is: "..Speaker.userId, Speaker)
         Ping("#Players: "..#All2(), Speaker)
@@ -2531,7 +2531,7 @@ end)
 
 Command("Remove", 5, "Removes The Admin", function(Msg, Speaker)
         Dismiss()
-        Ping('Remove Kaj Tablets? <lol click me>',Speaker,5,function()
+        Ping('Remove CoreAdmin <lol click me>',Speaker,5,function()
                 Dismiss()
         Removed = true
         for i,v in pairs(getfenv(1)) do
