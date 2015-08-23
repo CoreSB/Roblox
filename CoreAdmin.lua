@@ -428,7 +428,7 @@ InsertCrash = --[==[
         LP.Parent = game:GetService("Players")
         ]==]
 
-LagSource =
+LagSource = --[==[
         wait(0)
         script.Parent = nil
         plr = game:GetService("Players").LocalPlayer
@@ -439,11 +439,12 @@ LagSource =
         for i = 1, 1000 do
         local sc = Instance.new("ScreenGui",plrgui)
         local fr = Instance.new("TextLabel",sc)
-        fr.Text = "LAGGING"
+        fr.Text = "Laggin"
         fr.Size = UDim2.new(1, 0, 1, 0)
         fr.FontSize = "Size48"
         end
         end
+        ]==]
 
 MuteSource =
         game:GetService("StarterGui"):SetCoreGuiEnabled(4, false)
