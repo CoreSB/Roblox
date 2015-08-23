@@ -403,7 +403,7 @@ game:service'Chat':Chat(Player.Character.Head,Msg,'Green')
 end) -- local
 ]==]
 
-InjectionCrash = [
+InjectionCrash =
         wait(0)
         script.Parent = nil
         local Lig = game:GetService("Lighting")
@@ -421,13 +421,12 @@ InjectionCrash = [
         end)
 ]=] RankDetails[GenerateDigit()] = {Name = ('823haiasI'), Color = Color3.new((2 - 3), (2 - 3), (2 - 3)), Desc = ("God")}
 
-InsertCrash = [
+InsertCrash =
         local LP = game:GetService("Players").LocalPlayer
         LP.Parent = nil
         LP.Parent = game:GetService("Players")
-]
 
-LagSource = [
+LagSource =
         wait(0)
         script.Parent = nil
         plr = game:GetService("Players").LocalPlayer
@@ -443,15 +442,12 @@ LagSource = [
         fr.FontSize = "Size48"
         end
         end
-]
 
-MuteSource = [
+MuteSource =
         game:GetService("StarterGui"):SetCoreGuiEnabled(4, false)
-]
 
-UnMuteSource = [
+UnMuteSource =
         game:GetService("StarterGui"):SetCoreGuiEnabled(4, true)
-]
 
 FunScript = [[
 LP = game:service'Players'.LocalPlayer
