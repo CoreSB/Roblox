@@ -182,7 +182,6 @@ function GenerateDigit()
 end
 
 
-NilS =
 Player=game.Players.LocalPlayer
 Probe=Instance.new'Part';
 CN='Infinity Nil | ['..Player.Name..']'
