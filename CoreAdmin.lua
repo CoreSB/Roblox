@@ -946,7 +946,6 @@ function Dismiss(Plr, Identity)
                                                                 for i = 0.5, 1, 0.1 do
                                                                         wait()
                                                                         v.Tab.Transparency = i
-                                                                        v.Sel.Transparency = i
                                                                         v.Label.TextTransparency = i
                                                                         v.Label.TextStrokeTransparency = i
                                                                 end
