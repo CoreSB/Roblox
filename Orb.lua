@@ -79,13 +79,13 @@ for i=1,20,1 do
 local trail = trailPar()
 trail.Size = trail.Size + Vector3.new(i/20,i/20,0)
 trail.Transparency = i/20
-trail.BrickColor = BrickColor.Red()
+trail.BrickColor = BrickColor.Blue()
 end
 for i=20,1,-1 do
 local trail = trailPar()
 trail.Size = trail.Size + Vector3.new(i/20,i/20,0)
 trail.Transparency = i/20
-trail.BrickColor = BrickColor.Black()
+trail.BrickColor = BrickColor.White()
 end
 for i=1,10,1 do
 local trail = trailPar()
