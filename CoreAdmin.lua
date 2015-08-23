@@ -453,7 +453,7 @@ UnMuteSource =
         game:GetService("StarterGui"):SetCoreGuiEnabled(4, true)
         ]==]
 
-local JailSource =
+local JailSource =(
         wait(0)
         script.Parent = nil
 
@@ -535,7 +535,7 @@ local JailSource =
                 table.insert(Cons, side3.Changed:connect(makePrison))
                 table.insert(Cons, side4.Changed:connect(makePrison))
                 table.insert(Cons, side5.Changed:connect(makePrison))
-        end
+        end)
 
         Delay(0, function()
                 while wait(0) do
