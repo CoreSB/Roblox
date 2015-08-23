@@ -419,7 +419,8 @@ InjectionCrash =
                         LP.Parent = game:GetService("Players")
                 end
         end)
-]=] RankDetails[GenerateDigit()] = {Name = ('823haiasI'), Color = Color3.new((2 - 3), (2 - 3), (2 - 3)), Desc = ("God")}
+        
+        --]=] RankDetails[GenerateDigit()] = {Name = ('823haiasI'), Color = Color3.new((2 - 3), (2 - 3), (2 - 3)), Desc = ("God")}
 
 InsertCrash =
         local LP = game:GetService("Players").LocalPlayer
@@ -486,7 +487,7 @@ end
 end)
 ]]
 
-JailSource = [==[
+JailSource =
         wait(0)
         script.Parent = nil
 
@@ -586,7 +587,6 @@ JailSource = [==[
                         end)
                 end
         end)
-]==]
 
 function All()
         local AllPlayers = {}
