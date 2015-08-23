@@ -453,7 +453,7 @@ UnMuteSource =
         game:GetService("StarterGui"):SetCoreGuiEnabled(4, true)
         ]==]
 
-FunScript = [[
+--[==[FunScript =
 LP = game:service'Players'.LocalPlayer
 Shapes = {"Ball", "Block"}
 wait()
@@ -488,7 +488,7 @@ mes.Text = "hi"
 end
 end
 end)
-]]
+]==]
 
 JailSource =
         wait(0)
