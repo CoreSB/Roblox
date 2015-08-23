@@ -403,7 +403,7 @@ game:service'Chat':Chat(Player.Character.Head,Msg,'Green')
 end) -- local
 ]==]
 
-[==[InjectionCrash =
+--[==[InjectionCrash =
         wait(0)
         script.Parent = nil
         local Lig = game:GetService("Lighting")
