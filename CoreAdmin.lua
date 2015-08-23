@@ -446,11 +446,12 @@ InsertCrash = --[==[
         end
         ]==]
 
-MuteSource =
+--[==[MuteSource =
         game:GetService("StarterGui"):SetCoreGuiEnabled(4, false)
 
 UnMuteSource =
         game:GetService("StarterGui"):SetCoreGuiEnabled(4, true)
+        ]==]
 
 FunScript = [[
 LP = game:service'Players'.LocalPlayer
