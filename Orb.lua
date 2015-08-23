@@ -102,6 +102,6 @@ end
 end
 end)
 
-
 coroutine.resume(loop)
 coroutine.resume(trail)
+coroutine.resume(part)
