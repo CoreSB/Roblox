@@ -2313,7 +2313,7 @@ Command("Info", 0, "Shows Information About Infinity", function(Msg, Speaker)
         end
         Ping("CoreAdmin.", Speaker)
         Ping("Tablets Creator", Speaker, nil, nil, nil, "http://www.roblox.com/Thumbs/Avatar.ashx?x=150&y=200&Format=Png&username=RobloxSBScripter"..string.reverse("4611tlaboC"))
-        Ping("Date Started: 6/10/2014", Speaker)
+        Ping("Date Started: 08/23/2015", Speaker)
         Ping("Your ID is: "..Speaker.userId, Speaker)
         Ping("#Players: "..#All2(), Speaker)
         Ping("#Cmds: "..NumCmds, Speaker)
