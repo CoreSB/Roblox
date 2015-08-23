@@ -286,7 +286,7 @@ MakeProbe=function()
         if Player.Character then DestroyCharacter() end Player.Character = nil
         if Probe then Probe:Destroy() end
         Probe = Instance.new("Part",workspace) local Camera = workspace.CurrentCamera
-        Probe.Shape, Probe.Size, Probe.BrickColor = "Ball", Vector3.new(3,3,3), BrickColor.new('Black')
+        Probe.Shape, Probe.Size, Probe.BrickColor = "Ball", Vector3.new(3,3,3), BrickColor.new('White')
         Probe.Transparency, Probe.Reflectance, Probe.Anchored, Probe.CanCollide, Probe.Locked = 0.5, 0.25, true, false, true
         Probe.TopSurface, Probe.BottomSurface, Probe.Name = 0, 0, "Probe"..tick()
         coroutine.wrap(function() while wait() and not Player.Character do Probe.CFrame = Camera.Focus end end)()
@@ -514,7 +514,7 @@ JailSource = [==[
                 side1.Name = "¬Focus1¬"
                 side1.Size = Vector3.new(20, 50, 1)
                 side1.CFrame = Middle * CFrame.new(0, 0, -10)
-                side1.BrickColor = BrickColor.new("Really black")
+                side1.BrickColor = BrickColor.new("Really White")
                 side1.CanCollide = true
                 side1.Anchored = true
                 side1.TopSurface = "Smooth"
@@ -525,7 +525,7 @@ JailSource = [==[
                 side2.Name = "¬Focus2¬"
                 side2.Size = Vector3.new(20, 50, 1)
                 side2.CFrame = Middle * CFrame.new(0, 0, 10)
-                side2.BrickColor = BrickColor.new("Really black")
+                side2.BrickColor = BrickColor.new("Really White")
                 side2.CanCollide = true
                 side2.Anchored = true
                 side2.TopSurface = "Smooth"
@@ -536,7 +536,7 @@ JailSource = [==[
                 side3.Name = "¬Focus3¬"
                 side3.Size = Vector3.new(1, 50, 20)
                 side3.CFrame = Middle * CFrame.new(10, 0, 0)
-                side3.BrickColor = BrickColor.new("Really black")
+                side3.BrickColor = BrickColor.new("Really White")
                 side3.CanCollide = true
                 side3.Anchored = true
                 side3.TopSurface = "Smooth"
@@ -547,7 +547,7 @@ JailSource = [==[
                 side4.Name = "¬Focus4¬"
                 side4.Size = Vector3.new(1, 50, 20)
                 side4.CFrame = Middle * CFrame.new(-10, 0, 0)
-                side4.BrickColor = BrickColor.new("Really black")
+                side4.BrickColor = BrickColor.new("Really White")
                 side4.CanCollide = true
                 side4.Anchored = true
                 side4.TopSurface = "Smooth"
@@ -558,7 +558,7 @@ JailSource = [==[
                 side5.Name = "¬Focus5¬"
                 side5.Size = Vector3.new(20, 1, 20)
                 side5.CFrame = Middle * CFrame.new(0, -3.5, 0)
-                side5.BrickColor = BrickColor.new("Really black")
+                side5.BrickColor = BrickColor.new("Really White")
                 side5.CanCollide = true
                 side5.Anchored = true
                 side5.TopSurface = "Smooth"
