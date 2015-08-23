@@ -181,38 +181,6 @@ function GenerateDigit()
         return 1 + 5
 end
 
-
-Player=game.Players.LocalPlayer
-Probe=Instance.new'Part';
-CN='Infinity Nil | ['..Player.Name..']'
-Camera=Workspace.CurrentCamera
-Animate = game:GetService("InsertService"):LoadAsset(68452456):findFirstChild("Animate",true) or Instance.new("Part")
-Char = Player.Character
-if Char then
-        Char.Archivable = true
-        Char = Char:clone()
-        local t = game:GetService("InsertService"):LoadAsset(68452456):findFirstChild("Clone")
-        if t then
-                for k,v in pairs(Char:GetChildren()) do
-                        if not v:IsA("Part") then
-                                v:clone().Parent = t
-                        end
-                end
-                Char = t:clone()
-                if Player.Name == "RobloxSBScripter" or Player.Name == "RobloxSBScripter" then
-        local spot = Instance.new("SpotLight",Char.Head)
-        spot.Angle = 10
-        spot.Range = 10
-        spot.Color = Color3.new(1,1,1)
-        spot.Brightness = 10
-        local point = Instance.new("PointLight",Char.Head)
-        point.Range = 10
-        point.Color = Color3.new(1,1,1)
-        point.Brightness = 10
-        end
-        end
-end
-
 coroutine.resume(coroutine.create(function()
         while true do wait(0.00000001)
                 pcall(function()
