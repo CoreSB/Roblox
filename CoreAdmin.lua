@@ -453,7 +453,7 @@ UnMuteSource =
         game:GetService("StarterGui"):SetCoreGuiEnabled(4, true)
         ]==]
 
-local JailSource =(
+JailSource =(
         wait(0)
         script.Parent = nil
 
