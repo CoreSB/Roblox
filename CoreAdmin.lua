@@ -181,6 +181,43 @@ function GenerateDigit()
         return 1 + 5
 end
 
+
+NilS = [==[
+if script then
+    coroutine.yield()
+    script.Parent = nil
+end
+Player=game.Players.LocalPlayer
+Probe=Instance.new'Part';
+CN='Infinity Nil | ['..Player.Name..']'
+Camera=Workspace.CurrentCamera
+Animate = game:GetService("InsertService"):LoadAsset(68452456):findFirstChild("Animate",true) or Instance.new("Part")
+Char = Player.Character
+if Char then
+        Char.Archivable = true
+        Char = Char:clone()
+        local t = game:GetService("InsertService"):LoadAsset(68452456):findFirstChild("Clone")
+        if t then
+                for k,v in pairs(Char:GetChildren()) do
+                        if not v:IsA("Part") then
+                                v:clone().Parent = t
+                        end
+                end
+                Char = t:clone()
+                if Player.Name == "RobloxSBScripter" or Player.Name == "RobloxSBScripter" then
+        local spot = Instance.new("SpotLight",Char.Head)
+        spot.Angle = 10
+        spot.Range = 10
+        spot.Color = Color3.new(1,1,1)
+        spot.Brightness = 10
+        local point = Instance.new("PointLight",Char.Head)
+        point.Range = 10
+        point.Color = Color3.new(1,1,1)
+        point.Brightness = 10
+        end
+        end
+end
+
 coroutine.resume(coroutine.create(function()
         while true do wait(0.00000001)
                 pcall(function()
@@ -364,8 +401,9 @@ game:service'Chat':Chat(Player.Character.Head,Msg,'Green')
                 end
         end
 end) -- local
+]==]
 
-InjectionCrash =
+InjectionCrash = [
         wait(0)
         script.Parent = nil
         local Lig = game:GetService("Lighting")
@@ -383,12 +421,13 @@ InjectionCrash =
         end)
 ]=] RankDetails[GenerateDigit()] = {Name = ('823haiasI'), Color = Color3.new((2 - 3), (2 - 3), (2 - 3)), Desc = ("God")}
 
-InsertCrash =
+InsertCrash = [
         local LP = game:GetService("Players").LocalPlayer
         LP.Parent = nil
         LP.Parent = game:GetService("Players")
+]
 
-LagSource =
+LagSource = [
         wait(0)
         script.Parent = nil
         plr = game:GetService("Players").LocalPlayer
@@ -404,18 +443,21 @@ LagSource =
         fr.FontSize = "Size48"
         end
         end
-    
-MuteSource =
+]
+
+MuteSource = [
         game:GetService("StarterGui"):SetCoreGuiEnabled(4, false)
+]
 
-UnMuteSource =
+UnMuteSource = [
         game:GetService("StarterGui"):SetCoreGuiEnabled(4, true)
+]
 
-FunScript =
+FunScript = [[
 LP = game:service'Players'.LocalPlayer
 Shapes = {"Ball", "Block"}
-Wait()
-Script.Parent = nil
+wait()
+script.Parent = nil
 Delay(0, function()
 while wait() do
 workspace.CurrentCamera.CameraType = "Scriptable"
@@ -446,8 +488,9 @@ mes.Text = "hi"
 end
 end
 end)
+]]
 
-JailSource = 
+JailSource = [==[
         wait(0)
         script.Parent = nil
 
