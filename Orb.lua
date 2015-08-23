@@ -55,3 +55,23 @@ end
 end)
 
 
+
+local function trailPar()
+local pos = part.CFrame.p
+wait()
+local pos2 = part.CFrame.p
+local dist = (pos - pos2).magnitude
+local trail = Instance.new("Part")
+trail.Anchored = true
+trail.Locked = true
+trail.CanCollide = false
+trail.BottomSurface = "Smooth"
+trail.TopSurface = "Smooth"
+trail.Shape = "Block"
+trail.FormFactor = "Custom"
+trail.Size = Vector3.new(0.1,0.1,dist)
+trail.CFrame = CFrame.new(pos,pos2) *CFrame.new(0,0,-dist/2)
+trail.Parent = folder
+game:GetService("Debris"):AddItem(trail,2)
+return trail	
+end
