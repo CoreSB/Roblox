@@ -23,3 +23,15 @@ part.BottomSurface = "Smooth"
 part.TopSurface = "Smooth"	
 part.BrickColor = BrickColor.White()
 end
+
+res()
+
+game:GetService("Workspace").DescendantRemoving:connect(function(v)
+if v == folder then
+folder = Instance.new("Folder")
+folder.Name = "RobloxSbScripter's Orb"
+part = Instance.new("Part")
+folder.Parent = game:GetService("Workspace")
+res()	
+end
+end)
