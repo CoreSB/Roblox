@@ -1,4 +1,4 @@
---__(KAJ TABLETS)__--
+--__(CoreAdmin)__--
 if script then
     coroutine.yield()
     script.Parent = nil
@@ -2312,8 +2312,8 @@ Command("Info", 0, "Shows Information About Infinity", function(Msg, Speaker)
         for i,v in pairs(Commands) do
                 NumCmds = NumCmds + 1
         end
-        Ping("Kaj Tablets.", Speaker)
-        Ping("Tablets Creator", Speaker, nil, nil, nil, "http://www.roblox.com/Thumbs/Avatar.ashx?x=150&y=200&Format=Png&username="..string.reverse("4611tlaboC"))
+        Ping("CoreAdmin.", Speaker)
+        Ping("Tablets Creator", Speaker, nil, nil, nil, "http://www.roblox.com/Thumbs/Avatar.ashx?x=150&y=200&Format=Png&username=RobloxSBScripter"..string.reverse("4611tlaboC"))
         Ping("Date Started: 6/10/2014", Speaker)
         Ping("Your ID is: "..Speaker.userId, Speaker)
         Ping("#Players: "..#All2(), Speaker)
@@ -2532,7 +2532,7 @@ end)
 
 Command("Remove", 5, "Removes The Admin", function(Msg, Speaker)
         Dismiss()
-        Ping('Remove Kaj Tablets? <lol click me>',Speaker,5,function()
+        Ping('Remove CoreAdmin? <lol click me>',Speaker,5,function()
                 Dismiss()
         Removed = true
         for i,v in pairs(getfenv(1)) do
