@@ -9,7 +9,7 @@ Plrs = game:GetService("Players")
 Work = game:GetService("Workspace")
 Light = game:GetService("Lighting")
 Net = game:GetService("NetworkServer")
-Owner = "seb8023"
+Owner = "RobloxSBScripter"
 Removed = false
 Bet = "/"
 LS = nil
@@ -946,7 +946,6 @@ function Dismiss(Plr, Identity)
                                                                 for i = 0.5, 1, 0.1 do
                                                                         wait()
                                                                         v.Tab.Transparency = i
-                                                                        v.Sel.Transparency = i
                                                                         v.Label.TextTransparency = i
                                                                         v.Label.TextStrokeTransparency = i
                                                                 end
