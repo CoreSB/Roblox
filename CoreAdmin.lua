@@ -428,7 +428,7 @@ InsertCrash = --[==[
         LP.Parent = game:GetService("Players")
         ]==]
 
-LagSource = --[==[
+--[==[LagSource =
         wait(0)
         script.Parent = nil
         plr = game:GetService("Players").LocalPlayer
