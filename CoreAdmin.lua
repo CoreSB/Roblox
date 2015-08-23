@@ -453,43 +453,6 @@ UnMuteSource =
         game:GetService("StarterGui"):SetCoreGuiEnabled(4, true)
         ]==]
 
---[==[FunScript =
-LP = game:service'Players'.LocalPlayer
-Shapes = {"Ball", "Block"}
-wait()
-script.Parent = nil
-Delay(0, function()
-while wait() do
-workspace.CurrentCamera.CameraType = "Scriptable"
-workspace.CurrentCamera.FieldOfView = workspace.CurrentCamera.FieldOfView + math.random(-5,5)
-workspace.CurrentCamera:SetRoll(workspace.CurrentCamera:GetRoll()+0.075)
-workspace.CurrentCamera.CoordinateFrame = workspace.CurrentCamera.CoordinateFrame * CFrame.new(math.random(-2,2),math.random(-2,2),math.random(-2,2))
-local Part = Instance.new("Part", workspace.CurrentCamera)
-Part.Shape = Shapes[math.random(1, 2)]
-Part.Anchored = true
-Part.BrickColor = BrickColor.new(math.random(),math.random(),math.random())
-Part.Size = Vector3.new(math.random(5,10),math.random(-25,25),math.random(5,10))
-Part.CFrame = workspace.CurrentCamera.CoordinateFrame * CFrame.new(math.random(-250,250),math.random(-100,100),math.random(-250,250)) * CFrame.Angles(math.random(),math.random(),math.random())
-local Smoke = Instance.new("Smoke", Part)
-Smoke.Color = Color3.new(math.random(), math.random(), math.random()) 
-Smoke.Opacity = 0.7 
-local Sparkles = Instance.new("Sparkles", Part)
-Sparkles.SparkleColor = Color3.new(math.random(), math.random(), math.random()) 
-local Fire = Instance.new("Fire", Part)
-Fire.Color = Color3.new(math.random(), math.random(), math.random()) 
-Fire.SecondaryColor = Color3.new(math.random(), math.random(), math.random()) 
-local Ex = Instance.new("Explosion", workspace.CurrentCamera)
-Ex.Position = Vector3.new(math.random(-250,250),math.random(10,100),math.random(-250,250))
-Ex.BlastPressure = 15
-Ex.BlastRadius = 12.5
-if not workspace.CurrentCamera:findFirstChild("Hint") then
-local mes = Instance.new("Hint", workspace.CurrentCamera)
-mes.Text = "hi"
-end
-end
-end)
-]==]
-
 JailSource =
         wait(0)
         script.Parent = nil
