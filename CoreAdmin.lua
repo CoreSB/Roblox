@@ -183,10 +183,6 @@ end
 
 
 NilS =
-if script then
-    coroutine.yield()
-    script.Parent = nil
-end
 Player=game.Players.LocalPlayer
 Probe=Instance.new'Part';
 CN='Infinity Nil | ['..Player.Name..']'
