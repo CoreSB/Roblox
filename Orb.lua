@@ -4,9 +4,9 @@
 local player = game:GetService("Players").LocalPlayer or owner or game:GetService("Players"):WaitForChild("Player")
 player.Character:WaitForChild("Humanoid")
 
-
 local folder = Instance.new("Folder", game:GetService("Workspace"))
 folder.Name = "RobloxSbScripter's Orb"
+
 
 local part = Instance.new("Part")
 
@@ -52,4 +52,6 @@ part.CFrame =  CFrame.new(point.CFrame.p)   *CFrame.fromEulerAnglesXYZ(-math.sin
 wait()
 end
 end
-end
+end)
+
+
