@@ -21,12 +21,6 @@ part.TopSurface = "Smooth"
 part.BrickColor = BrickColor.White()
 part.BrickColor = BrickColor.White()
 part.BrickColor = BrickColor.White()
-part.BrickColor = BrickColor.White()
-part.BrickColor = BrickColor.White()
-part.BrickColor = BrickColor.White()
-part.BrickColor = BrickColor.White()
-part.BrickColor = BrickColor.White()
-part.BrickColor = BrickColor.White()
 end
 
 res()
