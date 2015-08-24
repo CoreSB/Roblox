@@ -20,6 +20,7 @@ part.Material = "Neon"
 part.BottomSurface = "Smooth"
 part.TopSurface = "Smooth"	
 part.BrickColor = BrickColor.White()
+part.Matrial = "Neon"
 end
 
 res()
@@ -105,4 +106,3 @@ end)
 
 coroutine.resume(loop)
 coroutine.resume(trail)
-coroutine.resume(part)
