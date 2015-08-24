@@ -47,7 +47,7 @@ if point.Parent.Name == player.Character.Name then
 point = player.Character:FindFirstChild("Torso")	
 end
 if part then
-part.CFrame =  CFrame.new(point.CFrame.p)   *CFrame.fromEulerAnglesXYZ(-math.sin(math.rad(i)),math.rad(i),0) *CFrame.new(0,7,-5)end
+part.CFrame =  CFrame.new(point.CFrame.p)   *CFrame.fromEulerAnglesXYZ(-math.sin(math.rad(i)),math.rad(i),0) *CFrame.new(0,2,-2)end
 wait()
 end
 end
