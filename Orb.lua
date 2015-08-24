@@ -16,6 +16,7 @@ part.Name = "Orb"
 part.Anchored = true
 part.Locked = true
 part.CanCollide = false
+part.Material = "Neon"
 part.BottomSurface = "Smooth"
 part.TopSurface = "Smooth"	
 part.BrickColor = BrickColor.White()
