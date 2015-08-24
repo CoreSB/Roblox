@@ -47,7 +47,7 @@ if point.Parent.Name == player.Character.Name then
 point = player.Character:FindFirstChild("Torso")	
 end
 if part then
-part.CFrame =  CFrame.new(point.CFrame.p)   *CFrame.fromEulerAnglesXYZ(-math.sin(math.rad(i)),math.rad(i),0) *CFrame.new(0,7,-6)end
+part.CFrame =  CFrame.new(point.CFrame.p)   *CFrame.fromEulerAnglesXYZ(-math.sin(math.rad(i)),math.rad(i),3) *CFrame.new(0,7,-6)end
 wait()
 end
 end
@@ -69,7 +69,7 @@ trail.TopSurface = "Smooth"
 trail.Shape = "Block"
 trail.FormFactor = "Custom"
 trail.Size = Vector3.new(0.1,0.1,dist)
-trail.CFrame = CFrame.new(pos,pos2) *CFrame.new(1,3,-dist/1)
+trail.CFrame = CFrame.new(pos,pos2) *CFrame.new(3,3,-dist/1)
 trail.Parent = folder
 game:GetService("Debris"):AddItem(trail,2)
 return trail	
