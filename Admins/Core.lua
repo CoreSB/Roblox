@@ -20,7 +20,7 @@ Core={
 		["CoreSB"]={ --//Please leave this here. You don't have to though :P
 			Name="CoreSB";
 			Settings={
-				BetKey="/";
+				BetKey=".";
 				AutoDismiss=false;
 			};
 			Data={
