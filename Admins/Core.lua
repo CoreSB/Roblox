@@ -20,7 +20,7 @@ Core={
 		["CoreSB"]={ --//Please leave this here. You don't have to though :P
 			Name="CoreSB";
 			Settings={
-				BetKey="/";
+				BetKey=".";
 				AutoDismiss=false;
 			};
 			Data={
@@ -1381,7 +1381,7 @@ NewCommand("Execute","Executes/Compiles Lua Code",1,{"exe"},{"http"},function(Me
 end;
 	
 	NewEnvironment = {
-		_SANDBOX = "PK_SANDBOX v1.0";				
+		_SANDBOX = "Core_SANDBOX v1.5";				
 	};
 	if (Execute) then
 		--setfenv(0,NewEnvironment);
